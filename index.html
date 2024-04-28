@@ -3,20 +3,103 @@
    <head>
      <title>Yatri | Indian Tourism</title>
      <style>
+    @font-face {
+        font-family: "Tatto-Calfornia";
+        src: url("./CaliforniaPersonalUseRegular-L37ED.ttf");
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Roboto+Slab:wght@100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
+    body{
+        margin: 0px;
+        padding: 0px;
+        background-color: rgb(132, 167, 207);
+    }
+    h1{
+        color: rgb(70, 2, 2);
+         font-family: 'Roboto Slab',cursive;
+        text-align: center;
+        text-decoration: underline;
+        font-size: xx-large;
+        background-color: rgb(106, 155, 219);
+        padding: 20px;
+        margin-top: 0px;
+      }
+      h3{
+        font-family:"Tatto-Calfornia",Georgia, 'Times New Roman', Times, serif;
+        color:rgb(1, 1, 14);
+        font-size: 37px;
+        text-align: center;
+       
+      }
+      h3:hover{
+        color: rgb(138, 56, 2);
+      }
+      .text_style{
+        font-family: 'Playfair Display','Times New Roman', Times, serif;
+        text-align: justify;
+        color:rgb(2, 2, 54);
+        margin-left: 10px;
+        margin-top: 40px;
+        border-left: 30px;
+        padding:20px;
+        border-left:solid 10px rgb(2, 2, 54);
+        background-color:rgb(106, 155, 219);
+        font-size: 17px;
+      }
+      .form_stlye{
+        background-color: rgb(79, 136, 211) ;
+        padding: 20px;
+        margin: 20px;
+        border: 2px solid rgb(1, 1, 14);
+      }
+      span{
+        font-family: 'Playfair Display','Times New Roman', Times, serif;
+        font-size: 30px;
+        margin-left: 350px;
+      }
+      .btn_submit{
+        background-color:rgb(14, 43, 209);
+           color: white;
+           border: solid rgb(178, 172, 192) 2px;
+           border-radius: 30px;
+           font-size: 13px;
+           font-style: normal;
+           font-weight: lighter;
+           padding: 10px 30px;
+           box-shadow: 10px 0px rgb(54, 51, 51) 10px;
+           margin-left: 390px;
+      }
+      .btn_signIn{
+           background-color: rgb(20, 2, 70);
+           color: white;
+           border-radius: 35px;
+           font-size: 20px;
+           padding: 10px 30px;
+           margin-left: 390px;
+           box-shadow: 2px 2px 2px 5px rgb(138, 136, 136);
+      }
+      .btn_signIn:hover{
+        background-color: rgb(4, 85, 4);
+      }
+      .btn_submit:hover{
+        background-color: brown;
+      }
      </style>
     </head>
    <body>
       <h1>India Travel Guide</h1>
-      <img src="Images/welcome_image.png" alt="Welcome To India" height="320px" width="1000px"/>
-      <h3>About India</h3>
-      <div>
-        Tourism in India has shown a phenomenal growth in the past decade. One of the reasons is that the Ministry of tourism, India has realized the immense potential of tourism in India during vacations. India travel tourism has grown rapidly with a great influx of tourists from all across the globe who have been irresistibly attracted to the rich culture, heritage, and incredible natural beauty of India. India tourism with its foggy hill stations, captivating beaches, historical monuments, golden deserts, serene backwaters, pilgrimage sites, rich wildlife, and colourful fairs capture the heart of every tourist. In addition, a variety of festivals, lively markets, vibrant lifestyle, and traditional Indian hospitality, will make your experience as an india tourist truly unforgettable and fantastic. Travel through the lovely Indian states and discover closely the resplendent colors and rich cultural locales of this incredible land. Our India tourism guide provides you a glimpse of travel and tourism in india ,india tourism information about south india tourism, north India tourism, and all the major tourist destinations, and tourism services of India. For more information about travel and tourism India and tourism of India, click www.yatra.com
+      <img src="Images/welcome_image.png" alt="Welcome To India" height="320px" width="1000px" style="margin-left: 120px;"/>
+      
+      <div class="text_style">
+        <h2>About India</h2>
+        Tourism in India has shown a phenomenal growth in the past decade. One of the reasons is that the Ministry of tourism, India has realized the immense potential of tourism in India during vacations. In dia travel tourism has grown rapidly with a great influx of tourists from all across the globe who have been irresistibly attracted to the rich culture, heritage, and incredible natural beauty of India. India tourism with its foggy hill stations, captivating beaches, historical monuments, golden deserts, serene backwaters, pilgrimage sites, rich wildlife, and colourful fairs capture the heart of every tourist. In addition, a variety of festivals, lively markets, vibrant lifestyle, and traditional Indian hospitality, will make your experience as an india tourist truly unforgettable and fantastic. Travel through the lovely Indian states and discover closely the resplendent colors and rich cultural locales of this incredible land. Our India tourism guide provides you a glimpse of travel and tourism in india ,india tourism information about south india tourism, north India tourism, and all the major tourist destinations, and tourism services of India. For more information about travel and tourism India and tourism of India, click www.yatra.com
       </div>
       <br/><br/>
-      <h2>Want to Plan Your Travel?</h2>
-      <span>Welcome, Registration Here First</span>
-      <div>
+      <h3>Want to Plan Your Travel?</h3>
+    <div class="form_stlye">
+        <span>Welcome, Registration Here First</span>
+ 
         <form>
             <br/><br/><br/>
            <label for="full_name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Full Name: </b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -31,16 +114,12 @@
            <input type="password" id="repassword" placeholder="**********"/><br><br/>
            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="checkbox"/> I agree to the <a href="#"><b><u>Terms of User</u></b></a><br/>
            <br/>
-           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <input type="submit" value="     Sign Up    "/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
            
+           <button class="btn_submit">Submit</button>
+           <p style="margin-left: 280px;"><b>Registered Already?</b></p>
+           <button class="btn_signIn"> Sign In</button>
         </form>
         <br/>
-        <p>Registered Already?</p>
-        <button> SignIn</button>
-      </div>
-
-
-   </body>
-
+        </div>
+    </body>
 </html>
